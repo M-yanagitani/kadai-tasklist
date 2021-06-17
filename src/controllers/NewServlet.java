@@ -23,10 +23,10 @@ public class NewServlet extends HttpServlet {
         // CSRF対策
         request.setAttribute("_token", request.getSession().getId());
 
-        // おまじないとしてのインスタンスを生成
+        // 画面表示時のエラー回避として “文字数0のデータ” をフォームに渡すインスタンスを生成
         request.setAttribute("tasks", new Task());
 
-        RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/messages/new.jsp");
+        RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/tasks/new.jsp");
         rd.forward(request, response);
     }
 
