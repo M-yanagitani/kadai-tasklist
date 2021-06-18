@@ -17,7 +17,7 @@
                 ${param.content}
             </div>
             <div id="footer">
-                (c) M.yanagitani
+                <br />(c) M.yanagitani
             </div>
         </div>
     </body>
